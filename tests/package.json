@@ -1,0 +1,37 @@
+{
+  "name": "htmx-wrapper-tests",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "run-p type-check \"build-only {@}\" --",
+    "preview": "vite preview",
+    "test": "playwright test",
+    "build-only": "vite build",
+    "type-check": "vue-tsc --build --force"
+  },
+  "dependencies": {
+    "@delsehi/htmxwrappervue": "../lib",
+    "vue": "^3.4.29"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.44.1",
+    "@tsconfig/node20": "^20.1.4",
+    "@types/node": "^20.14.5",
+    "@vitejs/plugin-vue": "^5.0.5",
+    "@vue/tsconfig": "^0.5.1",
+    "msw": "^2.3.5",
+    "npm-run-all2": "^6.2.0",
+    "typescript": "~5.4.0",
+    "vite": "^5.3.1",
+    "vue-tsc": "^2.0.21"
+  },
+  "author": "Delfi Šehidić",
+  "license": "MIT OR Apache-2.0",
+  "msw": {
+    "workerDirectory": [
+      "public"
+    ]
+  }
+}
