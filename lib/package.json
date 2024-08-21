@@ -1,6 +1,6 @@
 {
   "name": "@delsehi/htmxwrappervue",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A Vue component that wraps around HTMX-sections on your site.",
   "main": "./dist/htmxwrappervue.umd.cjs",
   "exports": {
@@ -21,13 +21,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/delsehi/htmxwrappervue"
+    "url": "git+https://github.com/delsehi/htmxwrappervue.git"
   },
   "keywords": [
     "vue",
     "htmx",
     "ssr"
   ],
+  "readme": "../README.md",
   "author": "Delfi Šehidić",
   "license": "MIT OR Apache-2.0",
   "devDependencies": {
@@ -38,8 +39,8 @@
     "vue-tsc": "^2.0.29"
   },
   "peerDependencies": {
-    "@vueuse/core": "^11.0.1",
-    "htmx.org": "^2.0.2",
-    "vue": "^3.4.38"
+    "@vueuse/core": "^11.0.0",
+    "htmx.org": "^2.0.0",
+    "vue": "^3.4.0"
   }
 }
